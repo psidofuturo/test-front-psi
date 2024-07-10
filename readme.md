@@ -1,26 +1,30 @@
-## Desafio de Frontend - Lista de Produtos
+## Desafio de Frontend - Lista de psicologos
 
 ### Objetivo
 
-Desenvolver uma aplicação utilizando Next.js 14 que consuma uma API de produtos e exiba uma lista de produtos com a possibilidade de visualizar detalhes de cada produto, utilizando Server Components e estilização com Tailwind CSS.
+Desenvolver uma aplicação utilizando Next.js 14 que consuma uma API de psicologos (exemplo em `psicologos.json`) e exiba uma lista de psicologos com a possibilidade de visualizar detalhes de cada psicologo, utilizando Server Components e estilização com Tailwind CSS.
+
+**Utilize o projeto do Figma como base de layout:**
+
+https://www.figma.com/design/NIN7Om6EKH4dAuRghWejak/Teste-Front-End-%7C-Psi-do-Futuro?node-id=0-1&m=dev
 
 ### Requisitos
 
 - Página Principal:
 
-  - Exibir uma lista de produtos obtidos a partir de uma API REST. Cada produto deve exibir: nome, preço e uma imagem. Ao clicar em um produto, o usuário deve ser redirecionado para a página de detalhes desse produto. (Para facilitar pode usar o faker.js)
+  - Exibir uma lista de psicologos obtidos a partir de uma API REST (você pode simular um RestAPI com base em `psicologos.json`). Cada psicologo deve exibir: nome, preço e uma imagem. Ao clicar em um psicologo, o usuário deve ser redirecionado para a página de detalhes desse psicologo.
 
-- Página de Detalhes (/product/[id]):
+- Página de Detalhes (/psi/[id]):
 
-  - Exibir informações detalhadas do produto selecionado, incluindo nome, preço, descrição, imagem e outras informações relevantes.
-  - Utilizar Server Components para renderização dos detalhes do produto, aproveitando a capacidade de carregamento paralelo de dados.
+  - Exibir informações detalhadas do psicologo selecionado, incluindo nome, preço, descrição, imagem e outras informações relevantes.
+  - Utilizar Server Components para renderização dos detalhes do psicologo, aproveitando a capacidade de carregamento paralelo de dados.
 
 - Integração com API:
 
-  - Utilizar Server Components para buscar os dados dos produtos de forma eficiente.
+  - Utilizar Server Components para buscar os dados dos psicologos de forma eficiente.
 
 - Componentização e Estilização:
-  - Componentizar a exibição de lista de produtos e de detalhes de produto.
+  - Componentizar a exibição de lista de psicologos e de detalhes de psicologo.
     Utilizar Tailwind CSS para estilização, aproveitando suas classes utilitárias para um desenvolvimento mais ágil e consistente.
 
 ### Boas Práticas:
@@ -29,10 +33,12 @@ Desenvolver uma aplicação utilizando Next.js 14 que consuma uma API de produto
 - Responsividade para diferentes tamanhos de tela.
 - Garantir acessibilidade na aplicação.
 
-### Extra (opcional):
+### Advanced (opcional):
 
-- Implementar paginação na lista de produtos.
-- Adicionar filtros para os produtos (por categoria, preço, etc.).
+- Implementar paginação dinamica na lista de psicologos usando virtualização (como react-window).
+
+- Adicionar calendário para agendamento de sessão (vide exemplo no Figma)
+
 - Implementar testes unitários.
 
 ### Avaliação
